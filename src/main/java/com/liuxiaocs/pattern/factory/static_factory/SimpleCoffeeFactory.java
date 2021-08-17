@@ -1,4 +1,4 @@
-package com.liuxiaocs.pattern.factory.simple_factory;
+package com.liuxiaocs.pattern.factory.static_factory;
 
 /**
  * 简单咖啡工厂类，用来生成咖啡
@@ -6,7 +6,7 @@ package com.liuxiaocs.pattern.factory.simple_factory;
  */
 public class SimpleCoffeeFactory {
 
-    public Coffee createCoffee(String type) {
+    public static Coffee createCoffee(String type) {
         Coffee coffee = null;
         if("american".equals(type)) {
             coffee = new AmericanCoffee();
