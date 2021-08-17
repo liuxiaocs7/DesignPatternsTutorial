@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * 测试使用反射破坏单例模式
+ * 反射方式破解单例的解决方法
  */
 public class Client {
     public static void main(String[] args) throws Exception {
@@ -15,6 +15,7 @@ public class Client {
         // 3. 取消访问检查
         cons.setAccessible(true);
         // 4. 创建Singleton对象
+        // 第一次可以正常创建对象，但是第二次就会抛异常
         Singleton s1 = (Singleton) cons.newInstance();
         Singleton s2 = (Singleton) cons.newInstance();
 

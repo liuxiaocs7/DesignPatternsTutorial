@@ -7,8 +7,23 @@ import java.io.Serializable;
  */
 public class Singleton implements Serializable {
 
+    private static boolean flag = false;
+
     // 私有构造方法
-    private Singleton() {}
+    private Singleton() {
+        synchronized (Singleton.class) {
+        /*
+            反射破解单例模式需要添加的代码
+            判断flag的值是否是true
+            如果是true说明非第一次访问，直接抛一个异常，如果是false的话，说明第一次访问
+         */
+            if(flag) {
+                throw new RuntimeException("不能创建多个对象");
+            }
+            // 将flag的值设置为true
+            flag = true;
+        }
+    }
 
     // 定义一个静态内部类
     private static class SingletonHolder {
