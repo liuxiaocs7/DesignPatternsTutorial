@@ -20,4 +20,9 @@ public class Singleton implements Serializable {
     public static Singleton getInstance() {
         return SingletonHolder.INSTANCE;
     }
+
+    // 当进行反序列化时会自动调用该方法，将方法的返回值直接返回
+    public Object readResolve() {
+        return SingletonHolder.INSTANCE;
+    }
 }
