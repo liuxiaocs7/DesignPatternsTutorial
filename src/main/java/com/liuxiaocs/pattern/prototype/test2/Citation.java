@@ -1,8 +1,8 @@
-package com.liuxiaocs.pattern.prototype.test1;
+package com.liuxiaocs.pattern.prototype.test2;
 
 import java.io.Serializable;
 
-public class Citation implements Cloneable {
+public class Citation implements Cloneable, Serializable {
 
     // 三好学生
     private Student stu;

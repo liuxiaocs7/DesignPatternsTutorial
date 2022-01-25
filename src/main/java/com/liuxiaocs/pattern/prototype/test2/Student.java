@@ -1,6 +1,8 @@
-package com.liuxiaocs.pattern.prototype.test1;
+package com.liuxiaocs.pattern.prototype.test2;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
 
     // 学生的姓名
     private String name;
