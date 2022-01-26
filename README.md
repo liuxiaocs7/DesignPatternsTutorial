@@ -27,5 +27,26 @@
   - demo9 `Runtime`实例
 - factory 工厂设计模式
   - before 改进之前的代码
-  - simple_factory 简单工厂
+  - simple_factory 简单工厂(习惯写法)
+  - static_factory 静态工厂(习惯写法)
+  - factory_method 工厂方法模式 满足开闭原则，复杂性较高
+  - abstract_factory 抽象工厂模式
+  - config_factory 工厂+配置文件的方式
+- prototype 原型模式
+  - demo 浅克隆，实现`Cloneable`接口，重写`Object`中的`clone`方法
+  - test 浅克隆案例
+  - test1 浅克隆对象
+  - test2 深克隆对象
+- builder 建造者模式
+  - demo1 案例1
+  - demo2 案例2
+- proxy 代理模式
+  - static_proxy 静态代理
+  - jdk_proxy JDK动态代理
+  - cglib_proxy CGLIB动态代理
+- adapter 适配器模式
+  - class_adapter 类适配器
+  - object_adapter 对象适配器
+- decorator 装饰器模式
+- bridge 桥接模式
   
