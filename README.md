@@ -56,4 +56,5 @@
 - strategy 策略模式
 - command 命令模式
 - responsibility 责任链模式
+- state 状态模式
   
