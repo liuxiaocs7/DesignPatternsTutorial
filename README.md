@@ -53,4 +53,6 @@
 - combination 组合模式
 - flyweight 享元模式
 - template 模板方法模式
+- strategy 策略模式
+- command 命令模式
   
