@@ -62,4 +62,5 @@
 - iterator 迭代器模式
 - visitor 访问者模式
 - memento 备忘录模式
+- interpreter 解释器模式
 
